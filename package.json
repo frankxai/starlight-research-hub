@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test:research": "node --test \"research/test/*.test.mjs\"",
+    "research:report": "node research/report.mjs"
   },
   "dependencies": {
     "@xyflow/react": "^12.8.2",
