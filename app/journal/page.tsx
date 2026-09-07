@@ -1,0 +1,4 @@
+import type { Metadata } from 'next'
+import ArticleLinks from '@/components/ArticleLinks'
+export const metadata:Metadata={title:'Field notes for founders, creators and AI architects',alternates:{canonical:'/journal'}}
+export default function Journal(){return <><div className="page-head"><p className="eyebrow">Field notes · Published with FrankX</p><h1>From capability<br/><em>to useful work.</em></h1><p className="lede">Three free guides to the Astra update. Practical commissions, acceptance criteria and the architecture behind a dependable workflow.</p></div><ArticleLinks/><div className="editor-note"><span className="eyebrow">Editorial approach</span><p>Source-grounded capability reviews and original implementation guidance. These articles do not claim hands-on creator-tool results. Measured findings will be added with their run receipts.</p></div></>}

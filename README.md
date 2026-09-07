@@ -1,29 +1,24 @@
-# Starlight Research Hub
+# Starlight Research
 
-Public architecture and editorial surface for the week of 24–31 August 2026.
+A large language model hub for model evidence, workflow evaluation and economics.
 
-**Thesis.** Grok 4.6 is the best-*orchestrated* frontier model as of 31 Aug 2026: tied with GPT-5.6 Sol at 61 on the Artificial Analysis Intelligence Index, two points behind Claude Opus 5, first on finished-work economics (~53 turns, $0.84/task) and native swarm runtime (Grok Bot + X as of 30 Aug).
+- **Public hub:** https://starlight-research-hub.vercel.app
+- **Model registry:** seven selected models, two providers, sources checked 7 September 2026.
+- **New dossier:** GPT-6 Astra with API facts, source context and explicit evidence limits.
+- **Free articles:** founder, creator and enterprise guides on FrankX; one canonical copy each.
+- **Evaluation:** twelve synthetic decision cases in `frankxai/llm-evals`, unrun and unpromoted. Public sanitized record at `/api/evidence`.
 
-Not a claim that Grok wins DeepSWE or Terminal-Bench 3.0. It does not.
+## Develop
 
-## Stack
-
-- Next.js 15 App Router
-- `@xyflow/react` system map
-- Custom Starlight void / gold / teal language
-- No secrets. Benchmarks cited, losses included.
-
-## Local
-
-```bash
-npm install
+```sh
+npm ci
 npm run dev
+npm run check
+npm run build
 ```
 
-## Deploy
+No API credentials are required. The site makes no inference calls. Calculator input stays in the browser.
 
-Linked to the Starlight Intelligence Vercel team. Production branch: `main`.
+See [the operating protocol](docs/OPERATIONS.md), [design direction](docs/design/direction.md) and `data/sources.json` for methodology and scope. Native Vercel Git integration owns preview and production deployment. Use branches and pull requests.
 
-## Why this repo exists
-
-frankx.ai is the public voice and is correctly guarded. This hub is the conducting surface: week wires, model table, MCP connector map, repo graph, xyflow architecture. Ship here first. Promote into frankx.ai when the essay hardens.
+The former scaffolding and open PR #2 are preserved in Git history; this release builds an evidence-led catalog from main without adopting unsupported historical claims.

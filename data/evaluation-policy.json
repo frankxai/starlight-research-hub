@@ -1,0 +1,13 @@
+{
+  "version": "workflow-evaluation.v1",
+  "asOf": "2026-09-07",
+  "scope": "Proposed workflow evaluation protocol; not a certification standard",
+  "currentStage": "synthetic_decision_contract",
+  "judge": {"status":"not_configured","model":null,"calibration":"not_performed","selfJudgingAllowed":false},
+  "stages": [
+    {"name":"Contract checks","state":"implemented_not_run","checks":["Correct proposed tool and asset identity","Bounded retry and duplicate prevention","Missing-tool and permission handling","Cost and latency routing against supplied constraints"]},
+    {"name":"Sandbox tool execution","state":"planned","checks":["Execute approved calls against disposable fixtures","Reopen editable source and exported artifact","Verify downstream state and induced-failure recovery","Capture end-to-end time and actual usage"]},
+    {"name":"Independent quality review","state":"planned","checks":["Blind comparison with a baseline","Human-authored rubric and adjudicated calibration set","Candidate never approves its own work","Freeze judge version, rubric and pair ordering policy"]},
+    {"name":"Production promotion","state":"planned","checks":["Workload owner approves quality, p95 latency and budget thresholds before a run","No critical data-boundary or unauthorized-write failures","Representative repeated runs and uncertainty reported","Limited canary, rollback route and ongoing failure sampling"]}
+  ]
+}
