@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "ResearchPacket.v1",
+  "packetId": "rp-2026-08-31-grok-orchestration",
+  "week": {
+    "startsOn": "2026-08-24",
+    "endsOn": "2026-08-31",
+    "title": "Orchestrated frontier models"
+  },
+  "owner": "frankxai",
+  "visibility": "internal",
+  "nodes": {
+    "models": [
+      { "id": "mdl-grok-4-6", "name": "Grok 4.6", "vendor": "xAI" },
+      { "id": "mdl-gpt-5-6-sol", "name": "GPT-5.6 Sol", "vendor": "OpenAI" },
+      { "id": "mdl-claude-opus-5", "name": "Claude Opus 5", "vendor": "Anthropic" }
+    ],
+    "capabilities": [
+      {
+        "id": "cap-native-swarm-runtime",
+        "name": "Native swarm runtime",
+        "kind": "runtime",
+        "modelIds": ["mdl-grok-4-6"]
+      },
+      {
+        "id": "cap-finished-work-economics",
+        "name": "Finished-work economics",
+        "kind": "economics",
+        "modelIds": ["mdl-grok-4-6"]
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "bmk-aa-intelligence-index",
+        "name": "Artificial Analysis Intelligence Index",
+        "unit": "index-points",
+        "direction": "higher-is-better",
+        "operator": "Artificial Analysis"
+      },
+      {
+        "id": "bmk-deepswe",
+        "name": "DeepSWE",
+        "unit": "percent-resolved",
+        "direction": "higher-is-better"
+      },
+      {
+        "id": "bmk-terminal-bench-3",
+        "name": "Terminal-Bench 3.0",
+        "unit": "percent-resolved",
+        "direction": "higher-is-better"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-artificial-analysis-index",
+        "name": "Artificial Analysis Intelligence Index",
+        "kind": "index",
+        "locator": null,
+        "resolution": "named-unretrieved"
+      }
+    ],
+    "claims": [
+      {
+        "id": "clm-grok46-aa-index",
+        "subject": "mdl-grok-4-6",
+        "predicate": "artificial-analysis-intelligence-index",
+        "value": 61,
+        "unit": "index-points",
+        "benchmarkId": "bmk-aa-intelligence-index",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 14,
+        "sourceIds": ["src-artificial-analysis-index"],
+        "status": "named-unverified",
+        "text": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index."
+      },
+      {
+        "id": "clm-gpt56-aa-index",
+        "subject": "mdl-gpt-5-6-sol",
+        "predicate": "artificial-analysis-intelligence-index",
+        "value": 61,
+        "unit": "index-points",
+        "benchmarkId": "bmk-aa-intelligence-index",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 14,
+        "sourceIds": ["src-artificial-analysis-index"],
+        "status": "named-unverified",
+        "text": "GPT-5.6 Sol scores 61 on the same index, tied with Grok 4.6."
+      },
+      {
+        "id": "clm-opus5-index-gap",
+        "subject": "mdl-claude-opus-5",
+        "predicate": "artificial-analysis-index-lead-over-grok-4-6",
+        "value": 2,
+        "unit": "index-points",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 14,
+        "sourceIds": [],
+        "status": "unsourced",
+        "text": "Claude Opus 5 leads Grok 4.6 by two index points."
+      },
+      {
+        "id": "clm-opus5-aa-index",
+        "subject": "mdl-claude-opus-5",
+        "predicate": "artificial-analysis-intelligence-index",
+        "value": 63,
+        "unit": "index-points",
+        "benchmarkId": "bmk-aa-intelligence-index",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 14,
+        "sourceIds": [],
+        "derivedFrom": ["clm-grok46-aa-index", "clm-opus5-index-gap"],
+        "status": "unsourced",
+        "text": "Claude Opus 5 scores 63 on the Artificial Analysis Intelligence Index."
+      },
+      {
+        "id": "clm-grok46-turns-per-task",
+        "subject": "cap-finished-work-economics",
+        "predicate": "median-turns-per-finished-task",
+        "value": 53,
+        "unit": "turns",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 30,
+        "sourceIds": [],
+        "status": "unsourced",
+        "text": "Grok 4.6 finishes a task in roughly 53 turns."
+      },
+      {
+        "id": "clm-grok46-cost-per-task",
+        "subject": "cap-finished-work-economics",
+        "predicate": "cost-per-finished-task",
+        "value": 0.84,
+        "unit": "usd",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 30,
+        "sourceIds": [],
+        "status": "unsourced",
+        "text": "Grok 4.6 costs $0.84 per finished task."
+      },
+      {
+        "id": "clm-grok46-swarm-runtime",
+        "subject": "cap-native-swarm-runtime",
+        "predicate": "shipped-runtime",
+        "value": "grok-bot-on-x",
+        "unit": null,
+        "observedAt": "2026-08-30",
+        "freshnessWindowDays": 30,
+        "sourceIds": [],
+        "status": "unsourced",
+        "text": "Grok 4.6 has a native swarm runtime in Grok Bot on X."
+      },
+      {
+        "id": "clm-grok46-leads-deepswe",
+        "subject": "mdl-grok-4-6",
+        "predicate": "leads-benchmark",
+        "value": false,
+        "benchmarkId": "bmk-deepswe",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 30,
+        "sourceIds": [],
+        "status": "unsourced",
+        "text": "Grok 4.6 does not lead DeepSWE."
+      },
+      {
+        "id": "clm-grok46-leads-terminal-bench",
+        "subject": "mdl-grok-4-6",
+        "predicate": "leads-terminal-bench-3",
+        "value": false,
+        "benchmarkId": "bmk-terminal-bench-3",
+        "observedAt": "2026-08-31",
+        "freshnessWindowDays": 30,
+        "sourceIds": [],
+        "status": "unsourced",
+        "text": "Grok 4.6 does not lead Terminal-Bench 3.0."
+      }
+    ],
+    "repos": [
+      {
+        "id": "repo-starlight-research-hub",
+        "slug": "frankxai/starlight-research-hub",
+        "owner": "frankxai",
+        "visibility": "private",
+        "role": "conducting plane for dated research weeks"
+      },
+      {
+        "id": "repo-frankx-website",
+        "slug": "frankxai/frankx.ai-vercel-website",
+        "owner": "frankxai",
+        "visibility": "private",
+        "role": "public voice; promotion target"
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "dep-hub-promotes-to-frankx",
+        "fromRepoId": "repo-starlight-research-hub",
+        "toRepoId": "repo-frankx-website",
+        "kind": "content",
+        "version": "ResearchPacket.v1"
+      }
+    ],
+    "decisions": [
+      {
+        "id": "dec-lab-surface-frozen",
+        "statement": "No domain is attached to this repo until a weekly packet cadence exists and at least one packet promotes with zero blockers.",
+        "decidedOn": "2026-09-02",
+        "owner": "frankxai",
+        "status": "ruled",
+        "claimIds": []
+      },
+      {
+        "id": "dec-thesis-not-promotable",
+        "statement": "The README thesis cannot be promoted to frankx.ai as written: every economic number in it is unsourced and the index numbers cite a source that was never retrieved.",
+        "decidedOn": "2026-09-02",
+        "owner": "frankxai",
+        "status": "ruled",
+        "claimIds": [
+          "clm-grok46-turns-per-task",
+          "clm-grok46-cost-per-task",
+          "clm-grok46-aa-index",
+          "clm-opus5-aa-index"
+        ]
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "art-readme-thesis",
+        "kind": "essay",
+        "path": "README.md",
+        "visibility": "internal",
+        "claimIds": [
+          "clm-grok46-aa-index",
+          "clm-gpt56-aa-index",
+          "clm-opus5-aa-index",
+          "clm-grok46-turns-per-task",
+          "clm-grok46-cost-per-task",
+          "clm-grok46-swarm-runtime",
+          "clm-grok46-leads-deepswe",
+          "clm-grok46-leads-terminal-bench"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fable-2026-09-02",
+        "targetId": "art-readme-thesis",
+        "reviewer": "fable-5-1",
+        "verdict": "needs-source",
+        "reviewedOn": "2026-09-02",
+        "notes": "Re-expressed the README thesis as claims without adding sources it did not name. No citation was invented. The Artificial Analysis index is named in the README and was not retrieved in this run."
+      }
+    ],
+    "promotions": [
+      {
+        "id": "prm-thesis-to-frankx",
+        "artifactId": "art-readme-thesis",
+        "target": "frankx.ai",
+        "state": "blocked",
+        "claimIds": [
+          "clm-grok46-aa-index",
+          "clm-gpt56-aa-index",
+          "clm-grok46-turns-per-task",
+          "clm-grok46-cost-per-task"
+        ],
+        "blockedBy": [
+          "clm-grok46-turns-per-task: numeric value 53 has no source",
+          "clm-grok46-cost-per-task: numeric value 0.84 has no source",
+          "clm-grok46-aa-index: numeric value 61 cites a named but unretrieved source",
+          "clm-gpt56-aa-index: numeric value 61 cites a named but unretrieved source"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+import { articles } from '@/lib/catalog'
+export default function ArticleLinks() { return <div className="articles">{articles.map((a,i)=><a className="article-link" key={a.slug} href={`https://frankx.ai/blog/${a.slug}`}><span className="article-number">0{i+1}</span><div><span className="eyebrow">{a.category} · Free article</span><h3>{a.title}</h3><p>{a.description}</p></div><span className="arrow" aria-hidden="true">↗</span></a>)}</div> }
