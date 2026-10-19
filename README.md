@@ -6,6 +6,13 @@ Public architecture and editorial surface for the week of 24–31 August 2026.
 
 Not a claim that Grok wins DeepSWE or Terminal-Bench 3.0. It does not.
 
+**Sourcing status.** That thesis is held as a typed graph in
+[`research/packets/2026-08-31-grok-orchestration.json`](research/packets/2026-08-31-grok-orchestration.json),
+and as of 2026-09-02 it does not promote to a public surface: `~53 turns` and `$0.84/task`
+carry no source, and the index scores name Artificial Analysis without having retrieved it.
+Run `npm run research:report -- research/packets/2026-08-31-grok-orchestration.json` for the
+current verdict. See [`research/README.md`](research/README.md).
+
 ## Stack
 
 - Next.js 15 App Router
